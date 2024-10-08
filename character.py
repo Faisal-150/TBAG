@@ -4,8 +4,6 @@ class Character():
         self.description = char_description
         self.conversation = None
         
-        
-     
     def describe(self):
         print(f"{self.name} is in this room!")
         print(self.description)
@@ -15,7 +13,7 @@ class Character():
 
     def talk(self):
         if self.conversation is not None:
-           print(f"[{self.name}] says: {self.conversation}")
+           print(f"{self.name} says: {self.conversation}")
         else:
           print(f"{self.name} doesn't want to talk to you.")
     
@@ -37,7 +35,7 @@ class Enemy(Character):
   
     def fight(self, combat_item):
       if combat_item == self.weakness:
-            print("you fend" + {self.name} + "off with the" + {combat_item} )
+            print(f"you fend {self.name} off with the {combat_item} !!")
             return True
       else:
             print(f"{self.name}  crushes you, puny adventurer")

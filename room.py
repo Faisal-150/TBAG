@@ -21,8 +21,6 @@ class Room():
     def get_name(self):
         return self.name
     
-    
-    
     def set_character(self, new_character):
       self.character = new_character
 
