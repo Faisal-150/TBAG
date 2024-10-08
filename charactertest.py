@@ -3,7 +3,7 @@ from character import Enemy
 dave = Enemy("Dave", "A dangerous robot")
 dave.describe()
 
-dave.set_conversation("Hi im Dave i want to fight you")
+dave.set_conversation("Hi im Dave I want to fight you")
 dave.talk()
 dave.set_weakness("fire")
 print(dave.weakness)
